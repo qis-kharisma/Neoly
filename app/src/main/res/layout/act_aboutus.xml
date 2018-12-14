@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="14dp"
+        android:text="---ABOUT US---"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="156dp"
+        android:text="Terdepan dalam Visi dan Terpercaya dalam Misi, kami selaku Pelayanan bidang Medis dengan nilai-nilai humanitas sejak 56 tahun berdiri dan berpengalaman, serta prestasi-prestasi mumpuni yang menolong banyak jiwa di seluruh dunia. Pelayanan yang prima tiada tara  didukung tenaga medis ahli dan fasilitas yang selalu baharu untuk pertahankan keutuhan karakter wibawa sejati, menyongsong peradaban terdepan dan terorganisir tak terelakan kebutuhan akan hal ini semakin perlu ditingkatkan.  obyektifitas selalu diemban untuk diagnosis mendalam dan lebih baik, tetap pada petuah teraprovokasi.   "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+</android.support.constraint.ConstraintLayout>

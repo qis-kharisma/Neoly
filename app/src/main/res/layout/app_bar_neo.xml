@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeoActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_neo"
+       />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ViewFlipper
+        android:id="@+id/viewflip"
+        android:layout_width="375dp"
+        android:layout_height="199dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+
+
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/nav_item_state"
+        app:itemTextColor="@drawable/nav_item_state"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_create_event"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="219dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:innerRadius="34dp"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+
+                android:layout_width="483dp"
+                android:layout_height="129dp"
+                android:padding="8dp"
+                >
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/finddoctor"
+                tools:ignoreContentDescription="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumb"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@+id/thumb"
+                android:layout_toRightOf="@+id/thumb"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="FIND DOCTOR"
+                    android:textColor="?colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="contain list of all doctor"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_create_event0"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="135dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="6dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:innerRadius="34dp"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+
+                android:layout_width="483dp"
+                android:layout_height="129dp"
+
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/thumb0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/regis"
+                    tools:ignoreContentDescription="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumb0"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/thumb0"
+                    android:layout_toRightOf="@+id/thumb0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="APPOINTMENT"
+                        android:textColor="?colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/team0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="registration for patients"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_create_event1"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="6dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:innerRadius="34dp"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="483dp"
+                android:layout_height="129dp"
+
+                android:padding="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/thumb1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/regis"
+                    tools:ignoreContentDescription="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumb1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/thumb1"
+                    android:layout_toRightOf="@+id/thumb1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="PROMOTION"
+                        android:textColor="?colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/team1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Promo for the Best"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

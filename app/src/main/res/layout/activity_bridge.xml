@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BridgeActivity">
+
+    <Button
+        android:id="@+id/buttontolog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="Back To Login"
+        app:layout_constraintBottom_toTopOf="@+id/buttonregnex"
+        app:layout_constraintEnd_toEndOf="@+id/buttonregnex"
+        app:layout_constraintStart_toStartOf="@+id/buttonregnex"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/buttonregnex"
+        android:layout_width="184dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="118dp"
+        android:text="NEXT TO REGISTRY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttontolog" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="115dp"
+        android:text="kembali atau belum melakukan registrasi"
+        app:layout_constraintBottom_toTopOf="@+id/buttontolog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
