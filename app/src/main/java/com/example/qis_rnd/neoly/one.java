@@ -54,7 +54,7 @@ TabActivity tab= new TabActivity();
   cdr1.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-          Intent intent=new Intent(one.this.getActivity(), MovieActivity.class);
+          Intent intent=new Intent(one.this.getActivity(), SearchActivity.class);
           one.this.startActivity(intent);
       }
   });
